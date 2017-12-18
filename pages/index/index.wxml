@@ -1,0 +1,46 @@
+<!--index.wxml-->
+
+  <view  bindtap="idChoose" class="banner background-all" data-id="{{bannerId}}" 
+  style="background-image:url('{{src}}')" >
+  </view>
+
+  <view class="container">
+     <view class="moonCake">
+          <view class="presell">
+              <text class="title">请亲朋好友吃月饼</text>
+              <view class="list clear">
+ 
+                <view class="item" bindtap="idChoose" wx:for="{{indexListTop}}" 
+                    wx:key="{{id}}" data-id="{{item.id}}">
+                    <navigator url="../detail/detail?detailId={{item.id}}" >
+                        <view  class="item-img background-all" 
+                              style="background-image:url('{{item.src}}')" >
+                        </view>
+                        <text>{{item.title}}</text>
+                    </navigator> 
+                </view>
+          
+              </view>
+          </view>
+          <view class="present ">
+              <text class="title">礼卡表心意</text>
+              <view class="list clear">
+                  <view class="item" catchtap="idChoose"   wx:for="{{indexListDown}}" 
+                  wx:key="{{item.id}}" data-id="{{item.id}}">
+                    <navigator url="../detail/detail?detailId={{item.id}}"   
+                    hover-class="none">
+                        <view  class="item-img background-all" 
+                            style="background-image:url('{{item.src}}')">
+                        </view>
+                        <text>{{item.title}}</text>
+                    </navigator> 
+                  </view>
+              </view>
+         </view>  
+      </view>
+     <view class="shopHistory" bindtap='bindViewTap'>
+      <image class="userinfo-avatar" src="../../images/history.png" mode="aspectFill"></image>
+      <text>购买历史</text>
+     </view>
+    <view class="empty"></view>
+</view>

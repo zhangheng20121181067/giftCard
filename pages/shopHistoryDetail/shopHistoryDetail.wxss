@@ -1,0 +1,36 @@
+/**index.wxss**/
+page{
+  height:100%;
+  
+}
+.container{
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("http://img0.imgtn.bdimg.com/it/u=123639929,2104011763&fm=27&gp=0.jpg");
+  background-size: cover;
+}
+.view-img{
+  width:640rpx;
+  height:480rpx;
+  border-radius: 30rpx;
+}
+.model-name{
+  line-height:90rpx;
+  text-align: center;
+
+   color:#fff;
+}
+
+.model-number{
+  height:90rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+   color:#fff;
+}

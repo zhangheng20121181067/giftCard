@@ -1,0 +1,51 @@
+<!--logs.wxml-->
+<view class="container">
+    <view class="banner background-all"  style="background-image:url('{{src}}')">
+    </view>
+    <view class="choiceCardPage">
+       <view class="title">
+            <image src="../../images/choiceIcon.png" mode="aspectFill"></image>
+            <text>选择卡面</text>
+       </view>
+      <view class="choiceList">
+          <view wx:for="{{choiceList}}" wx:key="id" wx:for-index="i" 
+          class="choice-item {{currentItem==item.id?'active-tag':''}}" data-id="{{item.id}}"   bindtap="tagChoose">
+            <view  class="item-img background-all"  
+                     style="background-image:url('{{item.src}}')" >
+            </view>
+             <view class="zhezhao"></view>
+          </view>
+      </view>
+   </view>
+
+   <view class="choiceGift">
+       <view class="title">
+            <image src="../../images/giftIcon.png" mode="aspectFill">></image>
+            <text>选择礼品</text>
+       </view>
+      <view class="giftList">
+           <view wx:for="{{giftList}}" wx:key="id" class="gift-item {{item.count>0?'bor-color':''}} {{currentItem==item.id?'active-tag':''}}"    >
+              <view class="price">
+                   <text>{{item.price}}</text>
+                   <text>面额</text>
+              </view>
+             <view class="count">
+                   <text class="reduce" data-id="{{item.id}}" bindtap='reduce' wx:if="{{item.count}}">-</text>
+                   <text class="number" wx:if="{{item.count}}">{{item.count}}</text>
+                   <text class="add"  data-id="{{item.id}}" bindtap='add'>+</text>
+              </view>
+          </view>
+      </view>
+  </view>
+
+</view>
+
+ <view class="buy">
+       <view wx:if="{{totalCount}}">
+            <text class="totalCount">共{{totalCount}}份</text>
+            <text class="totalPrice">￥{{totalPrice}}</text>
+       </view>
+       <button disabled='{{totalCount<=0}}' class="{{totalCount>0?'btnAct':''}}">购买并赠送</button>
+  </view>
+
+   

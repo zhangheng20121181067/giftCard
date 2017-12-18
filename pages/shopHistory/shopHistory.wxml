@@ -1,0 +1,27 @@
+<!--shopHistory.wxml-->
+<view class="container">
+   <text wx:if="{{false}}">当前无购买历史记录</text>
+
+   <view class="goodsshow " bindtap="idChoose" wx:for="{{goodslist}}" 
+   wx:key="{{item.id}}" data-id="{{item.id}}">
+      <view class="goodsshow-50 item background-all"  
+          style="background-image:url('{{itemBgSrc}}')">
+        <!-- data自定义属性-->
+            <view class="item-img background-all"  style="background-image:url('{{item.img}}')">
+            </view>
+           <view class="goodsshow-text">
+               <view class="goodsshow-text-left">
+                   <view class="goodsshow-text1">{{item.name}}</view>
+                   <view class="goodsshow-text2">id:{{item.id}}</view>
+                   <view class="goodsshow-text3">￥300</view>
+               </view>
+               <view class="goodsshow-text-right">
+                    <view class="goodsshow-text4">x{{item.number}}</view>
+                  
+                    <view class="goodsshow-text6">2017-10-01</view>
+               </view>
+            </view>
+      </view>
+   </view>
+   
+</view>

@@ -1,0 +1,100 @@
+/**index.wxss**/
+.container{
+   margin:20rpx;
+}
+text{
+  display: block;
+}
+.container text{
+  padding-top:100rpx;
+  text-align: center;
+  color:#333;
+  font-size:26rpx;
+}
+
+.item{
+ background-position: initial;
+  display:flex;
+  justify-content: space-between;
+  
+   padding:30rpx;
+   margin-bottom:30rpx;
+}
+
+.item-img{
+  width:226rpx;
+  height:226rpx;
+  border-radius: 20rpx;
+}
+
+
+.item .goodsshow-text{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+
+ 
+  font-size:16px;
+}
+.item .goodsshow-text .goodsshow-text-left{
+    display:flex;
+    flex-direction: column;
+}
+.item .goodsshow-text .goodsshow-text2,.item{
+   margin:20rpx 0
+}
+.goodsshow-text .goodsshow-text3{
+  color:red;
+}
+.goodsshow-text .goodsshow-text4{
+  text-align: right;
+   margin-bottom: 85rpx;
+}
+
+.goodsshow-image{
+  width:100%;
+}
+
+.modal{
+   opacity: .6
+}
+.modal{
+  display:block
+}
+.model-img image{
+  width:100%;
+}
+
+.model-name{
+  text-align: center;
+  padding:30rpx 0;
+}
+.model-number{
+  display: flex;
+  justify-content: space-between
+}
+
+
+
+
+.test{
+   display: flex;
+  
+}
+.test view{
+  width:50px;
+  height:30px;
+  background: red;
+  margin-left:10px;
+}
+.test view.spa4,.test view.spa5 {
+
+  background: yellow;
+  
+}
+.test view.spa3{
+  display: flex;
+  flex:1;
+  justify-content: space-between
+
+}

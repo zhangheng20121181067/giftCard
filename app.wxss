@@ -1,0 +1,18 @@
+/**app.wxss**/
+
+ul {  list-style: none;  }
+dl,dd,ul,li,input,img,td ,button{  border: 0;  }
+a{  text-decoration: none;  }
+a:hover{ color:#fb921b }
+.clear:after{content:"200B";display:block;font-size:0;height:0;clear:both;}
+
+.clear{clear:both;}
+.fl{float:left;}
+.fr{float:right}
+
+
+.background-all{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

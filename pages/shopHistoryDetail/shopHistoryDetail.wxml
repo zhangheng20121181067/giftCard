@@ -1,0 +1,14 @@
+<!--shopHistory.wxml-->
+<view class="container">
+    <view  class="content" style="">     
+        <view class="view-img background-all"  style="background-image:url('{{img}}')">
+          
+        </view>
+        <view class="model-name">{{name}}</view>
+        <view class="model-number">
+            <view class="number-text1">库存：{{number}}</view>
+            <view class="number-text2">销售率：{{sellingrate}}</view>
+        </view>
+    </view>
+   
+</view>

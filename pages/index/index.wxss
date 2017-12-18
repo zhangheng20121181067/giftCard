@@ -1,0 +1,80 @@
+/**index.wxss**/
+.container{
+  padding:0 40rpx 0 ;
+  background-color: #eee;
+}
+.banner{
+  width:100%;
+  height:628rpx;
+}
+image{
+  width:100%;
+}
+
+.moonCake{
+   padding-top:60rpx;
+}
+.moonCake .item{
+   width:298rpx;
+   background-color: #fff;
+   border-radius:30rpx;
+   text-align: center;
+
+  
+}
+.moonCake .item-img{
+  height:157rpx;
+}
+.moonCake .title{
+  display:block;
+  padding:20rpx 0;
+  font-weight:600;
+}
+.moonCake text{
+  display: block;
+  line-height: 60rpx;
+}
+.moonCake .item text{
+ line-height:60rpx;
+ color:#666;
+ font-weight:600;
+ font-size: 17px;
+}
+ 
+
+
+
+.moonCake .presell{
+ margin:20rpx 0 60rpx;
+}
+
+.moonCake  .list .item{
+  float:left;
+  margin-bottom:30rpx;
+}
+.moonCake  .list .item:nth-child(2n){
+  float:right;
+}
+
+.shopHistory{
+   padding:50rpx 0 60rpx;
+   text-align: center;
+   border-bottom:1px solid #ddd;
+ 
+   display:flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+.shopHistory image{
+  width:35rpx;
+  height:35rpx;
+  margin-right:15rpx;
+}
+
+.empty{
+  height:40rpx;
+}
+
+
+
